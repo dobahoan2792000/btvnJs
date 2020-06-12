@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function check (a){
+            if (a==1) return false;
+            for(var i = 2 ; i<=Math.sqrt(a) ; i++)
+                if(a%i==0) return false;
+            return true;
+
+        }
+        do{
+        var x = prompt("Enter number ?","0");
+       }while(x<1)
+       if(x==1) document.write("Không có số nguyên tố nào !");
+       else {
+            for(var i = 1 ; i<=x;i++)
+                if(check(i)==true)
+                    document.write(i+"&nbsp");
+       }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

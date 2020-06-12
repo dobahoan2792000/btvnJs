@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        do{
+         var x = prompt("Enter number ?","0");
+        }while(x<1)
+         x = Number(x);
+         var flag = true;
+       
+        
+        while(flag == true && x>0 )
+            {
+                var y =  x %10;
+                x = Math.floor(x/10);
+                
+                if(y%2==0) flag = false; // có thể dùng break và bỏ điều kiện flag==true
+            }
+        if(flag == false) document.write("NO");
+        else document.write("YES");
+     </script>
+</head>
+<body>
+    
+</body>
+</html>
